@@ -36,6 +36,9 @@ DEPLOYED FRONTEND REPOSITORY
 ## User Stories
 
 ## Database Schema
+DrawSQL was used to create a database schema to visualise the types of custom models this project might require. This schema was used as a guide to what needed to be added to each model.
+
+![Database Schema](docs/database_schema/database_schema_gamer_verse.png)
 
 ## Testing
 
