@@ -3,6 +3,8 @@ from .models import Profile
 
 # DRF-API walkthrough used to get guidance on creating profile serializer
 # Original code has been modified to suit project purpose
+
+
 class ProfileSerializer(serializers.ModelSerializer):
     owner = serializers.ReadOnlyField(source='owner.username')
     is_owner = serializers.SerializerMethodField()
@@ -10,7 +12,6 @@ class ProfileSerializer(serializers.ModelSerializer):
     def get_is_owner(self, obj):
         request = self.context['request']
         return request.user == obj.owner
-
 
     class Meta:
         model = Profile
