@@ -1,8 +1,10 @@
+from django.http import Http404
 from rest_framework import status, permissions
 from rest_framework.response import Response
 from rest_framework.views import APIView
 from .models import Post
 from .serializers import PostSerializer
+from pp5_gamer_verse_drf_api.permissions import IsOwnerOrReadOnly
 
 # DRF-API walkthrough used to get guidance on creating post view
 
@@ -12,9 +14,7 @@ class PostList(APIView):
     List all posts
     '''
     serializer_class = PostSerializer
-    permission_classes = [
-        permissions.IsAuthenticatedOrReadOnly
-    ]
+    permission_classes = [permissions.IsAuthenticatedOrReadOnly]
 
     def get(self, request):
         posts = Post.objects.all()
@@ -35,3 +35,23 @@ class PostList(APIView):
         return Response(
             serializer.errors, status=status.HTTP_400_BAD_REQUEST
         )
+
+
+class PostDetail(APIView):
+    permission_classes = [permissions.IsAuthenticatedOrReadOnly]
+    serializer_class = PostSerializer
+
+    def get_object(self, pk):
+        try:
+            post = Post.objects.get(pk=pk)
+            self.check_object_permissions(self.request, post)
+            return post
+        except Post.DoesNotExist:
+            raise Http404
+
+    def get(self, request, pk):
+        post = self.get_object(pk)
+        serializer = PostSerializer(
+            post, context={'request': request}
+        )
+        return Response(serializer.data)
