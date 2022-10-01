@@ -5,7 +5,7 @@ from .models import Comment
 # Original code has been modified to suit project purpose
 
 
-class CommentSerializer():
+class CommentSerializer(serializers.ModelSerializer):
     '''
     Comment model serializer
     '''
