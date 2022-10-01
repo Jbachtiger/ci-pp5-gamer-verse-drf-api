@@ -24,8 +24,7 @@ class Post(models.Model):
         upload_to='images/', default='../default-profile-240x240_f0iojl'
     )
     game_medium = models.CharField(
-        max_length=15,
-        choices=game_medium_choices
+        max_length=15, choices=game_medium_choices, default='games'
     )
 
     class Meta:

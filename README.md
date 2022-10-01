@@ -48,6 +48,9 @@ DrawSQL was used to create a database schema to visualise the types of custom mo
 
 ## Solved Bugs
 
+'collections.OrderedDict' object has no attribute 'size' - this error occured when trying to implement validation for image size. The issue was that the function was called def validate instead of def validate_image
+
+
 ## Known Bugs
 
 ## Technologies Used
