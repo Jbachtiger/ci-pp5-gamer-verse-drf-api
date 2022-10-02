@@ -8,15 +8,19 @@ from .models import Like
 
 class LikeSerializer(serializers.ModelSerializer):
     '''
-    Like model serializer 
+    Like model serializer
     '''
     owner = serializers.ReadOnlyField(source='owner.username')
 
     class Meta:
         model = Like
         fields = ['id', 'created_on', 'owner', 'post']
-    
+
     def create(self, validated_data):
+        '''
+        Creates an error message should a user
+        try to like the same post more than once
+        '''
         try:
             return super().CREATE(validated_data)
         except IntegrityError:
