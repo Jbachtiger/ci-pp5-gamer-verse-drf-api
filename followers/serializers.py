@@ -2,6 +2,9 @@ from django.db import IntegrityError
 from rest_framework import serializers
 from .models import Follower
 
+# DRF-API walkthrough used to get guidance on creating follower serializer
+# Original code has been modified to suit project purpose
+
 
 class FollowerSerializer(serializers.ModelSerializer):
     '''
