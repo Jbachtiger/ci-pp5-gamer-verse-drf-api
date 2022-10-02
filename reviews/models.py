@@ -49,6 +49,10 @@ class Review(models.Model):
     )
 
     class Meta:
+        '''
+        Order reviews by date created and display
+        most recent first
+        '''
         ordering = ['-created_on']
 
     def __str__(self):
