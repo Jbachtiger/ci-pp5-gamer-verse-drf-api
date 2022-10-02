@@ -18,6 +18,18 @@ class ReviewList(generics.ListCreateAPIView):
         '''
         serializer.save(owner=self.request.user)
 
+    filter_backends = [
+        filters.SearchFilter,
+    ]
+
+    search_fields = [
+        'owner__username',
+        'title',
+        'genre',
+        'game_developer',
+        'game_publisher',
+    ]
+
 
 class ReviewDetail(generics.RetrieveUpdateDestroyAPIView):
     '''
