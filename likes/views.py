@@ -8,7 +8,7 @@ from likes.serializers import LikeSerializer
 
 class LikeList(generics.ListCreateAPIView):
     """
-    List likes or create a like if logged in.
+    Functionality to like/unlike post for users that are logged in
     """
     permission_classes = [permissions.IsAuthenticatedOrReadOnly]
     serializer_class = LikeSerializer
@@ -16,4 +16,12 @@ class LikeList(generics.ListCreateAPIView):
 
     def perform_create(self, serializer):
         serializer.save(owner=self.request.user)
-    
+
+
+class LikeDetail(generics.RetrieveDestroyAPIView):
+    """
+    Functionality to create/delete a like
+    """
+    permission_classes = [IsOwnerOrReadOnly]
+    serializer_class = LikeSerializer
+    queryset = Like.objects.all()
