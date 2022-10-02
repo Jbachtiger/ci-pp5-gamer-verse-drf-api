@@ -1,5 +1,6 @@
 from rest_framework import serializers
 from .models import Profile
+from followers.models import Follower
 
 # DRF-API walkthrough used to get guidance on creating profile serializer
 # Original code has been modified to suit project purpose
@@ -8,14 +9,25 @@ from .models import Profile
 class ProfileSerializer(serializers.ModelSerializer):
     owner = serializers.ReadOnlyField(source='owner.username')
     is_owner = serializers.SerializerMethodField()
+    following_id = serializers.SerializerMethodField()
 
     def get_is_owner(self, obj):
         request = self.context['request']
         return request.user == obj.owner
+    
+    def get_following_id(self, obj):
+        user = self.context['request'].user
+        if user.is_authenticated:
+            following = Follower.objects.filter(
+                owner=user, followed=obj.owner
+            ).first()
+            return following.id if following else None
+        return None
 
     class Meta:
         model = Profile
         fields = [
             'id', 'owner', 'created_on', 'modified_on', 'name', 
-            'favourite_game', 'description', 'image', 'is_owner'
+            'favourite_game', 'description', 'image', 'is_owner',
+            'following_id',
         ]
