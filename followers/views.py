@@ -20,3 +20,12 @@ class FollowerList(generics.ListCreateAPIView):
         Authenticated users follow request saves to database
         '''
         serializer.save(owner=self.request.user)
+
+
+class FollowerDetail(generics.RetrieveDestroyAPIView):
+    '''
+    Functionality for user to follow/unfollow another user
+    '''
+    permission_classes = [IsOwnerOrReadOnly]
+    queryset = Follower.objects.all()
+    serializer_class = FollowerSerializer
