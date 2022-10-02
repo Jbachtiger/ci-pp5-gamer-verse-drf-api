@@ -15,6 +15,8 @@ class PostSerializer(serializers.ModelSerializer):
     profile_id = serializers.ReadOnlyField(source='owner.profile.id')
     profile_image = serializers.ReadOnlyField(source='owner.profile.image.url')
     like_id = serializers.SerializerMethodField()
+    likes_count = serializers.ReadOnlyField()
+    comments_count = serializers.ReadOnlyField()
 
 # Image validation ensures correct size, height and width of image is uploaded
     def validate_image(self, value):
@@ -50,5 +52,5 @@ class PostSerializer(serializers.ModelSerializer):
         fields = [
             'id', 'owner', 'is_owner', 'profile_id', 'profile_image',
             'created_on', 'modified_on', 'title', 'description', 'image',
-            'game_medium', 'like_id',
+            'game_medium', 'like_id', 'likes_count', 'comments_count',
         ]
