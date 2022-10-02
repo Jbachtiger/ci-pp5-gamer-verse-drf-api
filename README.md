@@ -52,6 +52,8 @@ DrawSQL was used to create a database schema to visualise the types of custom mo
 
 UNIQUE constraint failed: posts_post.owner_id - model set as owner = models.OneToOneField(User, on_delete=models.CASCADE), should be owner = models.ForeignKey(User, on_delete=models.CASCADE)
 
+'super' object has no attribute 'CREATE' - create was in all capitals
+
 
 ## Known Bugs
 

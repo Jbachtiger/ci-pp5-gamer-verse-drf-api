@@ -22,7 +22,7 @@ class LikeSerializer(serializers.ModelSerializer):
         try to like the same post more than once
         '''
         try:
-            return super().CREATE(validated_data)
+            return super().create(validated_data)
         except IntegrityError:
             raise serializers.ValidationError({
                 'detail': 'duplication'
