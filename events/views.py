@@ -1,3 +1,21 @@
-from django.shortcuts import render
+from rest_framework import generics, permissions
+from pp5_gamer_verse_drf_api.permissions import IsOwnerOrReadOnly
+from .models import Event
+from .serializers import EventSerializer
 
-# Create your views here.
+
+class EventList(generics.ListCreateAPIView):
+    '''
+    Create new events
+    '''
+    serializer_class = EventSerializer
+    permission_classes = [permissions.IsAuthenticatedOrReadOnly]
+    queryset = Events.object.all()
+
+    def perform_create(self, serializer):
+        '''
+        Save authenticated events
+        '''
+        serializer.save(owner=self.request.user)
+
+    
