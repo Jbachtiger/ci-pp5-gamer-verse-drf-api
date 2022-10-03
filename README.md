@@ -25,13 +25,13 @@
     - [Acknowledgements](#acknowledgements)
 
 ## Introduction
-Gamer Verse is a content platform to share news and have social interactions with likeminded individuals about games. Users will be able to find articles relating to the gaming space, along with community events in local cities. This is the backend API database section of the project built to support the ReactJS frontend, and it is powered by Django Rest Framework. 
+Gamer Verse is a content sharing platform to share reviews, posts and have social interactions with likeminded individuals about games. Users will be able to find posts and reviews relating to the gaming space, along with community events in local cities. This is the backend API database section of the project built to support the ReactJS frontend, and is powered by the Django Rest Framework. 
 
-DEPLOYED API (HEROKU) - CLICK HERE
+DEPLOYED API (HEROKU) - [CLICK HERE](https://gamer-verse-drf-api.herokuapp.com/)
 
 DEPLOYED FRONTEND (HEROKU) - CLICK HERE
 
-DEPLOYED FRONTEND REPOSITORY
+DEPLOYED FRONTEND REPOSITORY - [CLICK HERE](https://github.com/Jbachtiger/ci-pp5-gamer-verse-drf-api#user-stories)
 
 ## User Stories
 
