@@ -91,16 +91,15 @@ None known
 
 ## Credits 
 
-### Code
-
-### Content
-
 ### Media
+- [RawPixel](https://www.rawpixel.com/) was used to source the default profile and post images 
 
 ### Resources
+- The Code Institute DRF-API walkthrough was used as a guide on how to build a DRF-API
+- Slack Community
 
 ### Acknowledgements
-
+- My partner for her patience and continuing support
 
 
 
