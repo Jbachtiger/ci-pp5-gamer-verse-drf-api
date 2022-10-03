@@ -56,12 +56,26 @@ UNIQUE constraint failed: posts_post.owner_id - model set as owner = models.OneT
 
 
 ## Known Bugs
+None known
 
 ## Technologies Used
 
 ### Languages Used
+- [Python](https://www.python.org/) 
 
-### Frameworks
+### Frameworks, Libraries and Programs Used
+- [Django](https://www.djangoproject.com/)
+- [Django REST Framework](https://www.django-rest-framework.org/)
+- [Django Rest Auth](https://django-rest-auth.readthedocs.io/en/latest/)
+- [Pillow](https://pillow.readthedocs.io/en/stable/)
+- [Cors Headers](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS)
+- [Heroku](https://dashboard.heroku.com/apps)
+- [GitHub](https://github.com/)
+- [Git](https://git-scm.com/)
+- [GitPod](https://gitpod.io/projects)
+- [Cloudinary](https://cloudinary.com/)
+- [DrawSQL](https://drawsql.app/diagrams)
+- [Raw Pixel](https://www.rawpixel.com/)
 
 ### Databases 
 
