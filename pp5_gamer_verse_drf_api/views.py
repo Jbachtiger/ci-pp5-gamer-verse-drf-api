@@ -1,6 +1,7 @@
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 
+# DRF-API walkthrough used to get guidance
 
 @api_view()
 def root_route(request):
