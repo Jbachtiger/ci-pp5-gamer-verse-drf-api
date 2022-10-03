@@ -48,11 +48,14 @@ DrawSQL was used to create a database schema to visualise the types of custom mo
 
 ## Solved Bugs
 
-'collections.OrderedDict' object has no attribute 'size' - this error occured when trying to implement validation for image size. The issue was that the function was called def validate instead of def validate_image
+- Bug 1: 'collections.OrderedDict' object has no attribute 'size'
+This error occured when trying to implement validation for image size. The issue was a spelling mistake in the function call. def validate was originally called instead of def validate_image.
 
-UNIQUE constraint failed: posts_post.owner_id - model set as owner = models.OneToOneField(User, on_delete=models.CASCADE), should be owner = models.ForeignKey(User, on_delete=models.CASCADE)
+- Bug 2: UNIQUE constraint failed: posts_post.owner_id
+This error happened as the posts model was set as owner = models.OneToOneField(User, on_delete=models.CASCADE) where as it needed to be owner = models.ForeignKey(User, on_delete=models.CASCADE).
 
-'super' object has no attribute 'CREATE' - create was in all capitals
+- Bug 3: 'super' object has no attribute 'CREATE'
+This error was due to a spelling issue with create being in all capitals and need to be lowercase.
 
 
 ## Known Bugs
