@@ -78,6 +78,8 @@ None known
 - [Raw Pixel](https://www.rawpixel.com/)
 
 ### Databases 
+- SQLite: local database used to test during development
+- PostgreSQL: database used in Heroku to store data on deployment
 
 ## Deployment
 
