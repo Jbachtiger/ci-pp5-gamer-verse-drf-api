@@ -64,7 +64,10 @@ SECRET_KEY = 'django-insecure-3atx=odbd$ie1c!7=l)e!7vk&@!0-x0hl-vw@!sz8og_tb9b7i
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'gamer-verse-drf-api.herokuapp.com',
+    'localhost',
+]
 
 
 # Application definition
