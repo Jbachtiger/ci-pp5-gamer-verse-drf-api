@@ -99,6 +99,14 @@ You can fork the GitHub repository to make a copy of the original to view and ch
 4. Click the fork button and a copy of the repository will have been created
 
 ### Cloning Repository
+You can create a clone of your repository by:
+
+1. Locate the repository you wish to clone https://github.com/Jbachtiger/ci-pp5-gamer-verse
+2. Click the arrow on the 'Code' button at the top of the list of files
+3. Select the clone by https and copy the URL using the provided clipboard
+4. Navigate to your chosen code editor and within the terminal change the directory to the location your to clone the repository to
+5. Type 'git clone' and paste the https link you copied from GitHub
+6. Press enter and git will clone the repository to your local machine
 
 ## Credits 
 
