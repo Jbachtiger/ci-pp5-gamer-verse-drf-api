@@ -6,7 +6,7 @@
 - [Database Schema](#database-schema)
 - [Testing](#testing)
     - [Manual Testing](#manual-testing)
-    - [Automated Testing](#automated-testing)
+    - [Validator Testing](#validator-testing)
 - [Solved Bugs](#solved-bugs)
 - [Known Bugs](#known-bugs)
 - [Technologies Used](#technologies-used)
@@ -43,6 +43,14 @@ DrawSQL was used to create a database schema to visualise the types of custom mo
 ## Testing
 
 ### Manual Testing
+#### URL Testing
+All urls have been tested for the development and deployed API and work as expected.
+![URL Testing](docs/testing/gamer_verse_api_url_testing.png)
+
+#### CRUD Functionality Testing
+CRUD functionality has been tested in each app via the deployment version including Posts, Reviews, Events, Comments, Followers, Likes, Profiles
+
+
 
 ### Validator Testing
 
