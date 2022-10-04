@@ -44,7 +44,7 @@ DrawSQL was used to create a database schema to visualise the types of custom mo
 
 ### Manual Testing
 
-### Automated Testing
+### Validator Testing
 
 ## Solved Bugs
 
@@ -56,7 +56,6 @@ This error happened as the posts model was set as owner = models.OneToOneField(U
 
 - Bug 3: 'super' object has no attribute 'CREATE'
 This error was due to a spelling issue with create being in all capitals and need to be lowercase.
-
 
 ## Known Bugs
 None known
@@ -86,9 +85,18 @@ None known
 
 ## Deployment
 
+### Set up JSON Web Tokens
+
+
 ### Deploying to Heroku
 
 ### Forking Repository
+You can fork the GitHub repository to make a copy of the original to view and change without affecting the original. This can be done by:
+
+1. Log into GitHub or create an account
+2. Locate the repository at https://github.com/Jbachtiger/ci-pp5-gamer-verse-drf-api
+3. At the top of the repository, on the right-hand side of the page you will see an option to select "Fork" from the available buttons
+4. Click the fork button and a copy of the repository will have been created
 
 ### Cloning Repository
 
@@ -98,7 +106,7 @@ None known
 - [RawPixel](https://www.rawpixel.com/) was used to source the default profile and post images 
 
 ### Resources
-- The Code Institute DRF-API walkthrough was used as a guide on how to build a DRF-API
+- The Code Institute DRF-API walkthrough was used as a guide on how to build a DRF-API 
 - Slack Community
 
 ### Acknowledgements
