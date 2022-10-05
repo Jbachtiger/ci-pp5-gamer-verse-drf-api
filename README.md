@@ -42,15 +42,30 @@ DrawSQL was used to create a database schema to visualise the types of custom mo
 
 ## Testing
 
+### Automated Tests
+The following unit tests have been created:
+
+### Post List View
+![Post List View](docs/testing/post_list_view_tests.png)
+
+### Post List View
+![Post Detail View](docs/testing/post_detail_view_tests.png)
+
 ### Manual Testing
 #### URL Testing
 All urls have been tested for the development and deployed API and work as expected.
+
 ![URL Testing](docs/testing/gamer_verse_api_url_testing.png)
 
 #### CRUD Functionality Testing
-CRUD functionality has been tested in each app via the deployment version including Posts, Reviews, Events, Comments, Followers, Likes, Profiles
+CRUD functionality has been tested in each app via the development version including Posts, Reviews, Events, Comments, Followers, Likes, Profiles. This was test by going to each link, creating new items, checking the new item url path, eidting an item (not available for Like, Followers or Users) and deleting an item (not avaiable for Users or Profiles). Results below:
 
+![CRUD Testing](docs/testing/gamer_verse_api_crud_testing.png)
 
+#### Search Functionality Testing
+Tested search feature for Posts, Reviews and Events app ensuring filtering worked on all.
+
+![Search Functionality Testing](docs/testing/gamer_verse_api_search_functionality_testing.png)
 
 ### Validator Testing
 
