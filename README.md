@@ -76,6 +76,7 @@ The website [pep8online.com](pep8online.com) is down therefore, I followed the r
 4. Select `pycodestyle` from the list
 5. PEP8 errors will now be underlined in red, as well as being listed in the PROBLEMS tab beside your terminal
 
+All python code has been validated through the PEP8 validator with some minor spacing issues raised e.g. whitespace in area they shouldn't be. These have all been fixed.
 
 ## Solved Bugs
 
