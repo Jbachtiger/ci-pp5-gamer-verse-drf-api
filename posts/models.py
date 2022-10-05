@@ -32,7 +32,6 @@ class Post(models.Model):
         Order posts by date and display most recent first
         '''
         ordering = ['-created_on']
-    
+
     def __str__(self):
         return f'{self.id} {self.title}'
-

@@ -23,7 +23,7 @@ class CommentSerializer(serializers.ModelSerializer):
 
     def get_created_on(self, obj):
         return naturaltime(obj.created_on)
-    
+
     def get_modified_on(self, obj):
         return naturaltime(obj.modified_on)
 
@@ -36,6 +36,6 @@ class CommentSerializer(serializers.ModelSerializer):
 
 class CommentDetailSerializer(CommentSerializer):
     '''
-    Serializer for comment model used in Detail View 
+    Serializer for comment model used in Detail View
     '''
     post = serializers.ReadOnlyField(source='post.id')

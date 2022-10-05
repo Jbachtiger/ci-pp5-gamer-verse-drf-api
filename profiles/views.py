@@ -50,6 +50,3 @@ class ProfileDetail(generics.RetrieveUpdateAPIView):
         following_count=Count('owner__following', distinct=True)
     ).order_by('-created_on')
     serializer_class = ProfileSerializer
-
-  
-

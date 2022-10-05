@@ -7,6 +7,7 @@ from .settings import (
 
 # DRF-API walkthrough used to get guidance
 
+
 @api_view()
 def root_route(request):
     return Response({

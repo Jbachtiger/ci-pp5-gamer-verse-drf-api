@@ -8,7 +8,7 @@ from .models import Follower
 
 class FollowerSerializer(serializers.ModelSerializer):
     '''
-    Followers model serializer 
+    Followers model serializer
     '''
     owner = serializers.ReadOnlyField(source='owner.username')
     followed_name = serializers.ReadOnlyField(source='followed.username')
@@ -21,7 +21,7 @@ class FollowerSerializer(serializers.ModelSerializer):
 
     def create(self, validated_data):
         '''
-        Stops user from following another user twice 
+        Stops user from following another user twice
         '''
         try:
             return super().create(validated_data)
