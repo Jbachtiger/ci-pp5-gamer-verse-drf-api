@@ -35,6 +35,69 @@ DEPLOYED FRONTEND REPOSITORY - [CLICK HERE](https://github.com/Jbachtiger/ci-pp5
 
 ## User Stories
 
+### EPIC 1: Initial Django REST and React Setup
+- As a developer, I can set up Django and install all the supporting libraries to get started with the project, so that I am ready to start backend development
+- As a developer, I can set up REACT and install all the supporting libraries to get started with the project, so that I am ready to start frontend development
+- As a developer, I can set up the Django development environment to secure the secrete keys, so that I do not expose the secret keys to the public or a party that should not see them
+- As a developer, I can deploy the site to Heroku, so that I can confirm that everything is working before the development of the site and enable continuous testing with the production environment
+
+### EPIC 2: Authentication
+- As a user I can create a new account so that I can access all the features for signed up users
+- As a user I can login to my account so that I can interact with functionality only for logged in users
+- As a user I can tell if I’m logged in or not so I can decide on my next action
+- As a user I can logout of my account so that I can secure it when not using it and prevent others from gaining access to it
+- As an admin I can refresh access tokens so that users can remain logged in for 24hr 
+
+### EPIC 3: Navigation
+- As a user I can view a navbar from every page so that I can easily navigate between pages throughout the site
+- As a user I can navigate through pages quickly so that I can view content seamlessly without page refresh
+- As a user that is logged out, I can see sign in and sign-up options so that I can easily sign in or sign up to the site
+- As a user I can infinitely scroll through pages so that I can continue to browse through content easily without navigating to a new page
+
+### EPIC 4: Posts
+- As a user I can create a new post so that I can share my thoughts and opinions with others
+- As a user I can view all posts so that I can browse all content on the site
+- As a user I can edit my posts so that I can make changes to existing content
+- As a user I can delete my posts so that I can remove my content
+- As a user I can view post details so that I can see more information about a post
+- As a logged in user, I can like a post so that I can show my appreciation for other users content
+- As a logged in user, I can view a list of liked posts so that I can see what posts I have previously liked and interested me
+- As a user, I can search for posts with keywords, author, or title, so that I can find the posts and user profiles I am most interested in
+- As a logged in user, I can follow profiles I like so that I can see the posts of just those users
+
+### EPIC 5: Comments
+- As a user I can create comment so that I can share my opinion on a topic
+- As a user I can read comments on a post so that I can see what other have said
+- As a user I can see the date of when a comment was posted so that I know how long ago a comment was left
+- As a user I can edit my comment so that I can change/update what I have said
+- As a user I can delete my comment so that I can remove it from the post
+
+### EPIC 6: Profiles
+- As a user I can view profile pages so that I can obtain more information about that user
+- As a user I can see the most popular profiles so that I can see who posts the most interesting content
+- As a user I can see statistics via the user profile so that I can see how many followers/following/comments they have
+- As a user I can follow/unfollow other users so that I can see and remove posts by specific user in my posts feed
+- As a user I can view all posts of a specific user so that I can go through all their previously published content
+- As a user I can edit my profile so that I can update my personal information such as picture and bio
+- As a user I can update my username/password so that I can make changes as needed
+- As a user I can view other user's avatars so that I can easily identify users of the application
+- As a user I can set my own avatar so that I can change the default to my chosen profile image
+
+### EPIC 7: Events
+- As a user I can create an event so that I can inform others of events in my area that might be of interest
+- As a user I can edit an event so that I can amend details of the event if anything changes
+- As a user I can delete an event so that I can remove events that are no longer happening
+- As a user I can search events so that I can find events based on keywords
+- As a user I can view all events so that I can browse all events happening and find out more about any that are of interest 
+
+### EPIC 8: Reviews
+- As a user, I can create a review, so that I can share my in-depth opinion on games
+- As a user, I can edit a review, so that I can amend and update previously written information
+- As a user, I can view a review in more detail, so that I can gather more information
+- As a user, I can delete a review, so that I can remove content that is no longer required
+- As a user, I can search all reviews in more detail, so that I find reviews on games I’m looking for
+- As a user, I can view all reviews in a list, so that I can browse all the game reviews freely
+
 ## Database Schema
 DrawSQL was used to create a database schema to visualise the types of custom models this project might require. This schema was used as a guide to what needed to be added to each model.
 
