@@ -12,7 +12,7 @@
 - [Known Bugs](#known-bugs)
 - [Technologies Used](#technologies-used)
     - [Languages Used](#languages-used)
-    - [Frameworks, Libraries and Programs](#frameworks-libraries-and-programs)
+    - [Frameworks, Libraries and Programs](#frameworks-libraries-and-programs-used)
     - [Databases](#databases)
 - [Deployment](#deployment)
     - [Deploying to Heroku](#deploying-to-heroku)
