@@ -68,6 +68,14 @@ Tested search feature for Posts, Reviews and Events app ensuring filtering worke
 ![Search Functionality Testing](docs/testing/gamer_verse_api_search_functionality_testing.png)
 
 ### Validator Testing
+The website [pep8online.com](pep8online.com) is down therefore, I followed the recommendation from the Code Institute staff to add the PEP8 validator directly to my Gitpod workspace to validate my python code.
+
+1. Run the command `pip3 install pycodestyle`  Note that this extension may already be installed, in which case this command will do nothing
+2. In your workspace, press Ctrl+Shift+P (or Cmd+Shift+P on Mac)
+3. Type the word `linter` into the search bar that appears, and click on `Python: Select Linter` from the filtered results
+4. Select `pycodestyle` from the list
+5. PEP8 errors will now be underlined in red, as well as being listed in the PROBLEMS tab beside your terminal
+
 
 ## Solved Bugs
 
@@ -431,6 +439,7 @@ You can create a clone of your repository by:
 ### Resources
 - The Code Institute DRF-API walkthrough was used as a guide on how to build a DRF-API 
 - Slack Community
+- Kevin at Code Institute for PEP8 validator instructions
 
 ### Acknowledgements
 - My partner for her patience and continuing support
