@@ -6,6 +6,7 @@
 - [Database Schema](#database-schema)
 - [Testing](#testing)
     - [Manual Testing](#manual-testing)
+    - [Automated Testing](#automated-tests)
     - [Validator Testing](#validator-testing)
 - [Solved Bugs](#solved-bugs)
 - [Known Bugs](#known-bugs)
