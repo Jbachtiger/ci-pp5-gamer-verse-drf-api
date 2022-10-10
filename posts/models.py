@@ -19,9 +19,10 @@ class Post(models.Model):
     created_on = models.DateTimeField(auto_now_add=True)
     modified_on = models.DateTimeField(auto_now=True)
     title = models.CharField(max_length=255)
-    description = models.TextField(blank=True)
+    description = models.TextField(blank=False)
     image = models.ImageField(
-        upload_to='images/', default='../default-profile-240x240_f0iojl'
+        upload_to='images/', default='../default-profile-240x240_f0iojl', 
+        blank=True
     )
     game_medium = models.CharField(
         max_length=15, choices=game_medium_choices, default='games'
