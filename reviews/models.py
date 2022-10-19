@@ -16,13 +16,13 @@ class Review(models.Model):
 
     genre_choices = [
         ('sandbox', 'Sandbox'),
-        ('real-time', 'Real-time strategy'),
+        ('real_time', 'Real-time strategy'),
         ('shooters', 'Shooters (FPS and TPS)'),
         ('mmo', 'MMO'),
-        ('role-playing', 'Role-playing'),
+        ('role_playing', 'Role-playing'),
         ('simulation_and_sport', 'Simulation and sports'),
         ('puzzle_party', 'Puzzler and party'),
-        ('action_adventure', 'Action-adventure'),
+        ('action_adventure', 'Action and adventure'),
         ('survival_horror', 'Survival and horror'),
         ('platformer', 'Platformer'),
     ]

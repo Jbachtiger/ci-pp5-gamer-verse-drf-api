@@ -21,7 +21,7 @@ class Post(models.Model):
     title = models.CharField(max_length=255)
     description = models.TextField(blank=False)
     image = models.ImageField(
-        upload_to='images/', default='../default-profile-240x240_f0iojl', 
+        upload_to='images/', default='../default-profile-240x240_f0iojl',
         blank=True
     )
     game_medium = models.CharField(
