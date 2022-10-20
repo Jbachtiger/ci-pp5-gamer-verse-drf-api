@@ -35,7 +35,8 @@ class Review(models.Model):
     created_on = models.DateTimeField(auto_now_add=True)
     modified_on = models.DateTimeField(auto_now=True)
     image = models.ImageField(
-        upload_to='images/', default='../default-profile-240x240_f0iojl'
+        upload_to='images/', default='../default-profile-240x240_f0iojl',
+        blank=True
     )
     game_score = models.CharField(
         max_length=10,
