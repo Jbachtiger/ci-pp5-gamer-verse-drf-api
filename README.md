@@ -1,4 +1,4 @@
-# Gamer Verse - API
+# PP5 - Advanced Frontend - Gamer Verse - API
 
 ## Table of Contents
 - [Introduction](#introduction)
@@ -488,7 +488,7 @@ You can fork the GitHub repository to make a copy of the original to view and ch
 ### Cloning Repository
 You can create a clone of your repository by:
 
-1. Locate the repository you wish to clone https://github.com/Jbachtiger/ci-pp5-gamer-verse
+1. Locate the repository you wish to clone https://github.com/Jbachtiger/ci-pp5-gamer-verse-drf-api
 2. Click the arrow on the 'Code' button at the top of the list of files
 3. Select the clone by https and copy the URL using the provided clipboard
 4. Navigate to your chosen code editor and within the terminal change the directory to the location your to clone the repository to
