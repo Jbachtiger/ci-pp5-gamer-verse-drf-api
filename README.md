@@ -153,7 +153,14 @@ This error happened as the posts model was set as owner = models.OneToOneField(U
 This error was due to a spelling issue with create being in all capitals and need to be lowercase.
 
 ## Known Bugs
-None known
+ - Bug 1: MIME Issues for the Admin section of the API
+ 
+ When logging into the admin section of the Gamer Verse API a MIME issue occurs. With the help of Scott from tutor support, the issue was potentially narrowed down to the filepath of the static files in question. After further dicussions with Scott, due to the potentially complex nature of the error and the fact that the admin section on the API isn't part of the assessment criteria, it was decided to leave the error in place as it does not affect any other part of the application backend or frontend. 
+
+![Tutor Support Convo 1](docs/bugs/tutor_support_1.png)
+
+![Tutor Support Convo 2](docs/bugs/tutor_support_2.png)
+
 
 ## Technologies Used
 
